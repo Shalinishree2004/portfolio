@@ -859,12 +859,20 @@
   @media (max-width: 768px) {
     nav { padding: 0 1.25rem; }
     .nav-links { display: none; }
-    .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2rem; padding: 5rem 1rem 2rem; }
-    .hero-eyebrow { justify-content: center; }
-    .hero-bio { margin-left: auto; margin-right: auto; }
-    .hero-actions { justify-content: center; }
+    .hero-inner { 
+    grid-template-columns: 1fr; 
+    text-align: left; 
+    gap: 2rem; 
+    padding: 5rem 1.25rem 2rem; 
+    }
+    .hero-eyebrow { justify-content: flex-start; }
+    .hero-bio {
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .hero-actions { justify-content: flex-start; }
     .hero-stats {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
     }
