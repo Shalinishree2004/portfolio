@@ -859,11 +859,18 @@
   @media (max-width: 768px) {
     nav { padding: 0 1.25rem; }
     .nav-links { display: none; }
-    .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2.5rem; padding: 6rem 1.5rem 3rem; }
+    .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2rem; padding: 5rem 1rem 2rem; }
     .hero-eyebrow { justify-content: center; }
     .hero-bio { margin-left: auto; margin-right: auto; }
     .hero-actions { justify-content: center; }
-    .hero-stats { justify-content: center; }
+    .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    }
+    .hero-stats > div {
+    min-width: 70px;
+    }
     .hero-avatar-wrap { order: -1; display: flex; justify-content: center; }
     .hero-avatar-ring { width: 180px; height: 180px; }
     .hero-avatar-initials { font-size: 2.8rem; }
