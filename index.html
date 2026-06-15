@@ -872,12 +872,14 @@
     }
     .hero-actions { justify-content: flex-start; }
     .hero-stats {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
     }
     .hero-stats > div {
-    min-width: 70px;
+    min-width: auto;
+    flex: 1;
+    text-align: center;
     }
     .hero-avatar-wrap { order: -1; display: flex; justify-content: center; }
     .hero-avatar-ring { width: 180px; height: 180px; }
